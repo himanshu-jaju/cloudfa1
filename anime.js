@@ -3,7 +3,7 @@
 const galleryContainer = document.getElementById("galleryContainer");
 
 // Total number of images (adjust if needed)
-const totalImages = 20; // For 1.jpg to 20.jpg
+const totalImages = 20; // For a1.jpg to a20.jpg
 
 for (let i = 1; i <= totalImages; i++) {
   const div = document.createElement("div");
@@ -11,7 +11,7 @@ for (let i = 1; i <= totalImages; i++) {
 
   // Create image element
   const img = document.createElement("img");
-  img.src = `https://cloudfa1.s3.ap-south-1.amazonaws.com/anime/${i}.jpg`;  // ✅ Corrected path
+  img.src = `https://cloudfa1.s3.ap-south-1.amazonaws.com/anime/a${i}.jpg`;  // ✅ Using your bucket link
   img.alt = `Anime ${i}`;
 
   // Create download link
@@ -21,7 +21,7 @@ for (let i = 1; i <= totalImages; i++) {
   downloadLink.textContent = "Download";
   downloadLink.classList.add("download-btn");
 
-  // Inline styles (can move to CSS later)
+  // Inline styles
   downloadLink.style.position = "absolute";
   downloadLink.style.bottom = "10px";
   downloadLink.style.left = "50%";
