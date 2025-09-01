@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeonVault Gallery - Professional Photo Collection</title>
+  <link rel="stylesheet" href="style-red.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">⚡ NeonVault</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#categories">Collections</a></li>
+      <li><a href="#contact">Connect</a></li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>NeonVault Gallery</h1>
+      <p>Discover curated collections of stunning photography and artwork, presented with elegant design and professional craftsmanship.</p>
+      <a href="#categories" class="btn">Explore Collections</a>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories" class="categories">
+    <h2>Featured Collections</h2>
+    <div class="card-container">
+
+      <a href="nature.html" class="card">
+        <img src="nature.jpg" alt="Nature">
+        <h3>🌿 Organic Realms</h3>
+      </a>
+
+      <a href="anime.html" class="card">
+        <img src="anime.jpg" alt="Anime">
+        <h3>🎌 Anime Dimensions</h3>
+      </a>
+
+      <a href="vehicles.html" class="card">
+        <img src="car.webp" alt="Vehicles">
+        <h3>🚗 Velocity Dreams</h3>
+      </a>
+
+      <a href="wildlife.html" class="card">
+        <img src="animal.jpg" alt="Wildlife">
+        <h3>🦁 Wild Spirits</h3>
+      </a>
+        
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 NeonVault Gallery | Professional Photography Collections</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
