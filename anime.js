@@ -11,7 +11,7 @@ for (let i = 1; i <= totalImages; i++) {
 
   // Create image element
   const img = document.createElement("img");
-  img.src = `https://cloudfa1.s3.ap-south-1.amazonaws.com/Images/anime/${i}.jpg`;  // ✅ Updated to new S3 bucket
+  img.src = `https://cloudfa1.s3.ap-south-1.amazonaws.com/anime/${i}.jpg`;  // ✅ Corrected path
   img.alt = `Anime ${i}`;
 
   // Create download link
